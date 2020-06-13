@@ -1,0 +1,15 @@
+@layout('app')
+
+@section('page')
+<form action="{{ route('PostsController.store') }}" method="POST">
+  <div>
+    <label for="title">Titulo</label>
+    <input name="title" type="text">
+  </div>
+  <div>
+    <label for="content">Conteúdo</label>
+    <textarea name="content"></textarea>
+  </div>
+  <button type="submit">Cria</button>
+</form>
+@endsection
